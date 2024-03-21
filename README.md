@@ -1,4 +1,4 @@
-#Programming Languages Comparison
+Programming Languages Comparison
 
 This project aims to compare the performance of different programming languages in executing a prime number finder algorithm up to 10,000. It provides implementations of the algorithm in various languages for a fun speed comparison.
 Features
