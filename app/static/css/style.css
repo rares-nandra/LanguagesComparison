@@ -1,0 +1,215 @@
+body
+{
+    background-color: #121212;
+    overflow-x: hidden !important;
+    padding-bottom: 10vh;
+    overflow-y: hidden;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.error-text
+{
+    color: red !important;
+}
+
+.success-text
+{
+    color: rgb(12, 128, 12) !important;
+}
+
+.header-container
+{
+    min-height: 60vh;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10vh;
+}
+
+.text
+{
+    font-family: 'Montserrat';
+}
+
+#Title
+{
+    font-size: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(146deg, rgba(71,175,231,1) 0%, rgba(236,134,190,1) 100%);
+}
+
+.action-button
+{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 25px 5px 25px;
+    transition: transform 0.2s ease-in;
+}
+
+.action-button:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.action-button-text
+{
+    text-decoration: none;
+}
+
+#ActionButton
+{
+    background: linear-gradient(146deg, rgb(28, 97, 234), rgba(71,175,231,1), rgba(236,134,190,1), #d145db);
+    background-size: 600%;
+    animation: gradientAnimation 10s linear infinite;
+}
+
+@-moz-keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-webkit-keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-o-keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+#ActionButtonText
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.languages-container
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(236,134,190,1);
+    transition: transform 0.2s ease-in;
+}
+
+.language-container:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.language
+{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.sub-title
+{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    align-items: center;
+}
+
+.update-box
+{
+    width: 90%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.update-box-header
+{
+    background-color: #1f1f1f;
+    border-radius: 20px 20px 0px 0px;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+
+.update-box-text
+{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.update-box-content
+{
+    background-color: #191919;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chart-container
+{
+    width: 90%;
+    min-width: 600px;
+}
+
+.chart
+{
+    height: 70vh;
+}

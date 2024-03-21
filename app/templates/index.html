@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Languages comparison</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+        <script src="{{ url_for('static', filename='js/socketsIO.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+        
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body>
+        <div class = "header-container">
+            <h1 class = "text" id = "Title">Languages comparison</h1>
+            <button onclick="handleActionButton()" class = "action-button" id = "ActionButton"><p class = "action-button-text text" id = "ActionButtonText">Compile All</p></button>
+        
+            <div class = "languages-container">
+                {% for language in languages %}
+                    <div class="language-container">
+                        <a class="language text" href="/language/{{ language['url'] }}" target="_blank">{{ language["Language"] }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class = "section hidden" id = "CompilationSection">
+            <h1 class = "text sub-title" id = "CompilationSubTitle">Compilation</h1>
+
+            <div class = "update-box" id = "CompilationUpdateBox">
+                <div class = "update-box-header">
+                    <h4 class = "text update-box-text">Updates</h4>
+                </div>
+                
+                <div class = "update-box-content" id = "CompilationUpdateBoxContent"></div>
+            </div>
+
+            <div class = "chart-container">
+                <canvas class = "chart" id="CompilationTimesChart"></canvas>
+            </div>
+
+            <div class = "chart-container">
+                <canvas class = "chart" id="CompiledSizesChart"></canvas>
+            </div>
+
+            <div class = "chart-container">
+                <canvas class = "chart" id="InterpretedSizesChart"></canvas>
+            </div>
+        </div>
+
+        <div class = "section hidden" id = "RunSection">
+            <h1 class = "text sub-title" id = "runSubTitle">Results</h1>
+
+            <div class = "update-box" id = "RunUpdateBox">
+                <div class = "update-box-header">
+                    <h4 class = "text update-box-text">Updates</h4>
+                </div>
+                
+                <div class = "update-box-content" id = "RunUpdateBoxContent"></div>
+            </div>
+
+            <div class = "chart-container">
+                <canvas class = "chart" id="RunTimesChart"></canvas>
+            </div>
+        </div>
+    </body>
+</html>
