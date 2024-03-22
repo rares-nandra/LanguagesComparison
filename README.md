@@ -1,4 +1,4 @@
-<img src="Images/UI/screenshot.png" alt="UI Screenshot">
+<img src="Images/UI.png" alt="UI Screenshot">
 
 # Programming Languages Comparison
 
