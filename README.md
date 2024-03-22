@@ -1,3 +1,5 @@
+![UI Screenshot](Images/UI/screenshot.png)
+
 # Programming Languages Comparison
 
 This project aims to compare the performance of different programming languages in executing a prime number finder algorithm up to 100,000. It provides implementations of the algorithm in various languages for a fun speed comparison. The code is customizable enough that it allows you to add new languages with ease and change the expected output and the arguments used for running building and compiling them so it doesen't have to be all about prime numbers. The language configurations are in app/Languages/Config.json. You can visialize the data regarding compilation times, executable sizes and running times on a web page running on port 8080. Just build the docker container and have fun!
