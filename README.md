@@ -1,4 +1,4 @@
-![UI Screenshot](Images/UI/screenshot.png)
+<img src="Images/UI/screenshot.png" alt="UI Screenshot">
 
 # Programming Languages Comparison
 
